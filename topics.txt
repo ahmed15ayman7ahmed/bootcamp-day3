@@ -1,0 +1,27 @@
+-hover
+-transition
+  -property
+  -duration
+  -delay
+  -timing-function
+
+-transform
+  -translate()
+  -rotate()
+  -scale()
+  -skew()
+
+-overflow
+-how to hidden element 
+  -display: none
+  -visibility: hidden
+  -opacity:0-1
+
+-Position
+  -static
+  -absolute
+  -fixed
+  -relative
+  -sticky
+
+

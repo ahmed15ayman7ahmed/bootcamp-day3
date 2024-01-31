@@ -1,0 +1,68 @@
+.back{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+}
+.back .anim , .back .contant{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    color: white;
+}
+.back .anim{
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+.back .contant .header{
+    background-color: blueviolet;
+    text-align: center;
+}
+.back .contant p{
+    text-align: center;
+    padding: 20px 50px;
+}
+.back:hover .anim{
+    animation: animation 1s ease-out forwards;
+}
+ .back:hover .contant{
+    animation: animation2 .7s linear 1.2s forwards;
+} 
+.back:hover img{
+     animation: animation3 .5s linear 1.1s forwards ;
+    
+} 
+
+@keyframes animation {
+    0%{
+        opacity: 1;
+        transform:rotate(-360deg);
+    }
+    100%{
+        opacity: 1;
+        transform:rotate(0deg);
+    }
+}
+@keyframes animation2 {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes animation3 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}

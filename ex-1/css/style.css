@@ -1,0 +1,32 @@
+.back{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+}
+.back .anim {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: -100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    transition: all 0.6s ease;
+    color: white;
+}
+.back .anim .header{
+    background-color: blueviolet;
+    text-align: center;
+}
+.back .anim p{
+    text-align: center;
+    padding: 20px 50px;
+}
+.back:hover .anim{
+    top: 0%;
+    bottom: 0%;
+}
